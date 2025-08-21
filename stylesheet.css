@@ -90,11 +90,6 @@ body {
 }
 
 /* Author details */
-.author {
-    float: left;
-    clear: none;
-    font-size: 0; 
-}
 
 .author img {
     width: 32px;
