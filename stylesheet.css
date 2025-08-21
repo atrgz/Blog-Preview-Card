@@ -1,0 +1,140 @@
+:root {
+    --background-color: #F4D04E;
+    --dark-grey-color: #111111;
+    --light-grey-color: #6B6B6B;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Figtree', sans-serif;
+}
+
+p {
+    margin: 0px 0px 12px;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.card {
+    box-sizing: border-box;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 384px;
+    padding: 24px;
+    border: 1px solid var(--dark-grey-color);
+    border-radius: 20px;
+    box-shadow: 8px 8px black;
+}
+
+/* Card Image */
+.card-img {
+    height: 200px;
+    margin-bottom: 24px;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Card Content */
+.card-content {
+    margin-bottom: 24px;
+}
+
+.category {
+    background-color: var(--background-color);
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 150%;
+    color: var(--dark-grey-color);
+    text-align: center;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 4px 12px;
+}
+
+.publish-date {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--dark-grey-color);
+    margin-bottom: 12px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 150%;
+    color: var(--dark-grey-color);
+    margin-bottom: 12px;
+}
+
+.title:hover {
+    color: var(--background-color);
+}
+
+.description {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--light-grey-color);
+}
+
+.description p{
+    margin: 0px;
+}
+
+/* Author details */
+.author {
+    float: left;
+    clear: none;
+    font-size: 0; 
+}
+
+.author img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.author-name {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 150%;
+    color: var(--dark-grey-color);
+    display: inline-block;
+    margin: 0px 0px 0px 12px;
+    vertical-align: middle;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 327px;
+    }
+    
+    .category, .publish-date {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
